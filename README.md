@@ -1,1 +1,1 @@
-# js-weatherApp -> Development
+# js-weatherApp -> weatherapp
