@@ -24,13 +24,21 @@ const getWeatherResponse = (response) => {
   console.log(`Temp Min in C: ${celsius(response.data.main.temp_min)}`);
   console.log(`Temp Min in F: ${fahrenheit(response.data.main.temp_min)}`);
 
-  console.log(`Temp Max in C: ${celsius(response.data.main.temp_min)}`);
-  console.log(`Temp Max in F: ${fahrenheit(response.data.main.temp_min)}`);
+  console.log(`Temp Max in C: ${celsius(response.data.main.temp_max)}`);
+  console.log(`Temp Max in F: ${fahrenheit(response.data.main.temp_max)}`);
 
   let result = {};
 
-  result.tempC = (parseFloat(response.data.main.temp) - 273.15).toFixed(1);
-  // console.log(result);
+  result.tempC = celsius(response.data.main.temp);
+  result.tempF = fahrenheit(response.data.main.temp);
+  result.feelLikeC = celsius(response.data.main.feels_like);
+  result.feelLikeF = fahrenheit(response.data.main.feels_like);
+  result.minC = celsius(response.data.main.temp_min);
+  result.minF = fahrenheit(response.data.main.temp_min);
+  result.maxC = celsius(response.data.main.temp_max);
+  result.maxF = fahrenheit(response.data.main.temp_max);
+
+  console.log(result);
   return result
 }
 
