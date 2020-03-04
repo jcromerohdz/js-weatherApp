@@ -8,7 +8,7 @@ You can find the original project specification at: [here]( https://www.theodinp
 
 ## Live Version
 
-[here]()
+[here](https://rawcdn.githack.com/jcromerohdz/js-weatherApp/e7fca1cd4b605d2c831e791cccbba1fad248816a/dist/index.html)
 
 ## Local Install
 
