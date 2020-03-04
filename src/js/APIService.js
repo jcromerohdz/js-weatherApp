@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved, import/no-extraneous-dependencies
 const axios = require('axios');
 
 const getWeatherResponse = (responseCel, responseFah) => {
