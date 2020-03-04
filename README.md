@@ -27,7 +27,7 @@ npm run start
 
 ## Built With:
 
-JavaScript, Bootstrap 4, Webpack.
+JavaScript, Bootstrap 4, Webpack, Node.
 
 ## Author
 
