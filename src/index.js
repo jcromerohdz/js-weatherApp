@@ -23,8 +23,7 @@ const getWeatherCel = (city) => {
       document.body.style.backgroundColor = '#EA9E8D';
       title.style.color = '#EA9E8D';
     }
-  }).catch((error) => {
-    console.log(`Something was wrong ${error}`);
+  }).catch(() => {
     title.innerHTML = 'Snap! Probably is not a valid city or entry :( !';
     title.style.color = 'red';
   });
@@ -44,8 +43,7 @@ const getWeatherFah = (city) => {
       document.body.style.backgroundColor = '#EA9E8D';
       title.style.color = '#EA9E8D';
     }
-  }).catch((error) => {
-    console.log(`Something was wrong ${error}`);
+  }).catch(() => {
     title.innerHTML = 'Snap! Probably is not a valid city or entry :( !';
     title.style.color = 'red';
   });
