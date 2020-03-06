@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="content">
+			
+	</div>
+	<div class="container">
+	<br/>
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-10 col-lg-8">
+			<form class="card card-sm">
+				<div class="card-body row no-gutters align-items-center">
+					<div class="col-auto">
+							<i class="fas fa-search h4 text-body"></i>
+					</div>
+					<div class="col">
+							<input class="form-control form-control-lg form-control-borderless" id="city" type="search" placeholder="Search the weather by city">
+					</div>
+					<div class="col-auto">
+							<button class="btn btn-lg btn-info" type="submit" id="search">Search</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<br/>
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-10 col-lg-8">
+			<div class="card card-sm">
+				<div class="card-body">
+					<h5 class="card-title" id="title">Your Weather</h5>
+					<p class="card-text">By default the weather will be in Celsius but you can click the Fahrenheit Button to see the weather in Fahrenheit.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item" id="feels">Feels Like :</li>
+					<li class="list-group-item" id="max">Max :</li>
+					<li class="list-group-item" id="min">Min :</li>
+				</ul>
+				<div class="card-body">
+					<button type="button" class="btn btn-primary btn-lg" id="cel">Celsius</button>
+					<button type="button" class="btn btn-secondary btn-lg" id="fah">Fahrenheit</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	</div>
+
+	<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+	<script src="main.js" defer></script>
+</body>
+
+</html>
